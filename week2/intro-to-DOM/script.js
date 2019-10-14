@@ -8,9 +8,9 @@ window.onload = ()=>{
         console.log('connected')
         let btn = document.getElementById('theButton');
 
+        
         btn.onclick = function(){
             let theImage = document.querySelector('img');
-
             if(theImage.getAttribute('src') === oneSrc){
                 theImage.setAttribute('src', otherSrc)
             } else {
