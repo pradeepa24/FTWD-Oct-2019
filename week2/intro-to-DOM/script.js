@@ -8,7 +8,7 @@ window.onload = ()=>{
         console.log('connected')
         let btn = document.getElementById('theButton');
 
-        
+
         btn.onclick = function(){
             let theImage = document.querySelector('img');
             if(theImage.getAttribute('src') === oneSrc){
@@ -20,7 +20,7 @@ window.onload = ()=>{
 
         document.getElementById('add-animal').onclick = function(){
             let newAnimal = document.getElementById('new-animal').value;
-            // inputs do not have .innerHTML or .innerTEXT instead they have .value
+            // inputs do not have .innerHTML or .innerText instead they have .value
             
             let list = document.querySelector('ul');
             let newThing = document.createElement('li');
