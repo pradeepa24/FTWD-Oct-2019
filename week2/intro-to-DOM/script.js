@@ -25,11 +25,8 @@ window.onload = ()=>{
             let list = document.querySelector('ul');
             let newThing = document.createElement('li');
             newThing.innerText = newAnimal;
-
             list.appendChild(newThing);
-
             document.getElementById('new-animal').value = "";
-
             newThing.onclick = turnRed;
         }
 
