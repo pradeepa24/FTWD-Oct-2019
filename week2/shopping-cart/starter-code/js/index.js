@@ -56,10 +56,6 @@ calcButton.onclick = function(){
 
 
 
-
-
-
-
 document.querySelector('.btn-delete').onclick = function(e){
 
   console.log(e.currentTarget.parentElement.parentElement);
