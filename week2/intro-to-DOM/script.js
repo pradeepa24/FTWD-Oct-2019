@@ -8,7 +8,7 @@ window.onload = ()=>{
         console.log('connected')
         let btn = document.getElementById('theButton');
 
-        theButton.onclick = function(){
+        btn.onclick = function(){
             let theImage = document.querySelector('img');
 
             if(theImage.getAttribute('src') === oneSrc){
