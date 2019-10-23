@@ -1,0 +1,111 @@
+body{
+    margin: 8px;
+}
+
+
+nav{
+    height: 30px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.nav-link{
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+
+}
+
+#main-title{
+    text-align: center;
+
+}
+
+body{
+    background-color: #e3e3e3;
+}
+
+.left-side{
+    float: left;
+    margin-left: 10%;
+}
+
+.right-side{
+    float: right;
+    margin-right: 10%;
+}
+
+.bottom {
+    padding-top: 100px;
+    clear: both;
+}
+
+
+/* give me the ul that are inside the thing with the class of left side */
+.left-side ul{
+    list-style: none;
+}
+
+
+
+/* find me the thing with the left side class and find me a direct child that is a UL and then find a direct child in there that is an LI */
+.left-side > ul > li{
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+
+/* give me the thing with the right side class and then go inside it and find a table that is a DIRECT child of that thing */
+.right-side > table{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.right-side td{
+    border: 1px dotted darkslategrey;
+    padding: 5px;
+}
+
+/* the more recent (the one at the bottom) rule will get priority except fancy selectors get priority over regular ones */
+
+
+/* except ID selectors take priority over everything */
+#blah{
+    background-color: blueviolet;
+}
+
+
+/* these 2 selectors will get priority over the ones below because theyre super fancy */
+body > .bottom > .diary-title{
+    background-color: pink;
+}
+
+.bottom > .diary-title{
+    background-color: green;
+}
+
+
+
+/* here, bisque will get priority over blue because its later but look up ^ */
+.diary-title{
+    background-color: blue;
+}
+
+.diary-title{
+    background-color: bisque;
+}
+
+body > h1, .bottom > h3, h3 + ul{
+    font-family: cursive;
+}
+
+ul > li:nth-child(3){
+    color: red;
+}
+
+input[name*="user"], input[name*="pass"]{
+    background-color: blue;
+}

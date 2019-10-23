@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>This is title</title>
+
+
+</head>
+
+
+<body>
+
+    <!-- main purpose of using one tage vs another is not to make it look right, but instead to make the code readable -->
+    <!-- html gets read not only by other developers but also by Google when google indexes your site
+     -->
+     <!-- so for SEO purposes you should use the correct tags -->
+
+     <nav >
+        <!-- this is the lazy way of doing styles -->
+         <!-- <a href="http://www.google.com" target="_blank" style="color:seagreen; margin: 5px; border: 1px solid black; border-radius: 3px; padding: 5px">
+            this is a link to google
+        </a> -->
+
+        <a href="http://www.google.com" class="nav-link">link to google</a>
+
+        <a href="./second-page.html" class="nav-link" >
+            Link to the second page
+        </a>
+
+    </nav>
+
+    <h1 id="main-title">Our Cool Ironhack Webpage, yay!</h1>
+
+    <h2>This is a subheading</h2>
+
+    <div class="left-side">
+    
+            <h3>Check out our list of animals!</h3>
+
+            <ul>
+                <li>Bearded Dragon</li>
+
+                <li>
+                    <i>
+                        Elephant Seal
+                    </i>
+                </li>
+
+                <li>
+                    <em>
+                        Hummingbird
+                    </em>
+                </li>
+
+                <li>Crab</li>
+                <li>Peacock</li>
+            </ul>
+
+    </div>
+
+
+    <div class="right-side">
+
+        <h5>Ironhack Campuses</h5>
+
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Awesomeness Rating</th>
+                    <th>Population</th>
+                </tr>
+
+                <tr>
+                    <td>Miami</td>
+                    <td>Pretty Awesome</td>
+                    <td>Lots o' people</td>
+                </tr>
+
+                <tr>
+                    <td>Barcelone</td>
+                    <td>Super Awesome</td>
+                    <td>Kinda a lot of people</td>
+                </tr>
+
+            </table>
+
+    </div>
+
+    <div class="bottom">
+
+
+            
+            <h3 id="blah" class="diary-title">Here are some excerpts from the campus diary</h3>
+
+            <p>Today was super awesome, learned lots of stuff</p>
+
+            <p>today was also super awesome, drank endless coffee and couldnt fall asleep</p>
+
+
+        
+            <hr>
+            <hr>
+            <hr>
+
+            <h3>Login To Your Account</h3>
+
+            <form action="./second-page.html" method="GET">
+
+                <fieldset>
+                    <label for="usrnm">Username</label>
+                    <input type="text" name="username" id="usrnm">
+                </fieldset>
+
+                <fieldset>
+                    <label for="pswrd">Password</label>
+                    <input type="password" name="password" id="pswrd">
+                </fieldset>
+
+                <fieldset>
+                    <label for="">Age</label>
+                    <input type="number" >
+                </fieldset>
+
+                <br>
+                <label for="">BirdthDate</label>
+                <input type="date">
+
+                <br>
+
+                <label for="">Give us a short bio about yourself</label>
+                <textarea name="" id="" cols="50" rows="5"></textarea>
+
+
+                <label for="">Which Sign Are You?</label>
+                <select name="" id="">
+                    <option value="">Gemini</option>
+                    <option value="">Capricorn</option>
+                    <option value="">Libra</option>
+                    <option value="">Ares</option>
+
+                </select>
+
+                <input type="hidden" name="secret-word" value="pineapple">
+
+
+                <button>Submit</button>
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+
+        
+
+
+            <br>
+            <br>
+
+    </div>
+
+    
+
+
+
+    
+
+
+
+    
+</body>
+</html>
