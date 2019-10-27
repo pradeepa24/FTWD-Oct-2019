@@ -32,7 +32,6 @@ window.onload = ()=>{
 
         let items = document.querySelectorAll('li');
 
-
         function turnRed(theEventObject){
             // e.currentTarget is the magical word that means the thing that you just clicked on 
             // it only works inside of event driven functions
@@ -40,8 +39,6 @@ window.onload = ()=>{
             theEventObject.currentTarget.style.backgroundColor = 'tomato';
         }
 
-
-    
 
         for(let i = 0; i < items.length; i++ ){
             items[i].onclick = turnRed;
