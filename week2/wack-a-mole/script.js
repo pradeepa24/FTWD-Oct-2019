@@ -2,7 +2,7 @@ window.onload = function(){
 
     const theMole = document.createElement('div');
     theMole.id = 'mole';
-
+    var score = 0;
 
 
 
@@ -42,8 +42,21 @@ window.onload = function(){
 
 
     // 1000 miliseconds is 1 second so this funciton will happen once every second
-
-
+let columns = document.getElementsByClassName('col');
+console.log(columns);
+for(let i=0;i<columns.length;i++){
+    console.log(columns[i]);
+    columns[i].onclick = crack;
+}
+function crack(event) {
+    console.log(event.currentTarget);
+    if(event.currentTarget.querySelector('#mole') !== null){
+        score += 10;
+    } else {
+score -= 5;
+    }
+    document.getElementsByTagName('h3')[0].querySelector('span').innerText = score;
+}
 
 
 
